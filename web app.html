@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@300&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="web app.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="HomePage" class="HomePage sections active">
+        <div class="container">
+            <div>
+                <div class="logoDiv">
+                    <img class="logoImg" src="Images/zlogo.png" alt="">
+                </div>
+                <div class="buttonsMainDiv">
+                    <div id = "doctorCategory" class="drButton pageButtons">
+                        <img class="drImage buttonImages" src="Images/dr.png" alt="">
+                        <span class="doctorText buttonTexts allButtons">Doctor</span>
+                        </div>
+                        <div class="mrButton pageButtons" id="microLabsCategory">
+                            <img class="mrImage buttonImages" src="Images/mr.png" alt="">
+                            <span class="microLabText buttonTexts">Micro Labs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="logosMainDiv">
+                    <div class="logosDiv">
+                        <img class="logosImgs" src="Images/logo1.png" alt="">
+                        <img class="logosImgs" src="Images/logo2 (1).png" alt="">
+                    </div>
+                    <div class="logosDiv">
+                        <img class="logosImgs" src="Images/logo2.png" alt="">
+                        <img class="logosImgs" src="Images/logo4.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <h1 class="careForText">I Care For You</h1>
+                </div>
+            </div>
+        </section>
+        <section id="customerForm" class="customerForm sections">
+            <div class="container">
+                <div class="logoDiv">
+                    <img class="logoImg" src="Images/zlogo.png" alt="">
+                </div>
+                <div class="doctorMainDiv">
+                    <h2 class="formHeading">Enter Customer Details</h2>
+            <form action="">
+                <label for="language" class="feildLabel">Select Video Language:</label>
+                <div class="inputFeild">
+                    <select name="language" id="language" class="selectFeild">
+                        <option value="">Choose Language</option>
+                        <option value="English">English</option>
+                        <option value="Gujarati">Gujarati</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Oriya">Oriya</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Malayalam">Malayalam</option>
+                    </select>
+                </div>
+                <label for="drName" class="feildLabel">DR. Name</label>
+                <div class="inputFeild">
+                    <i class="fa fa-user feildIcon" aria-hidden="true"></i>
+                    <input class="formFeild" type="drName" placeholder="Enter Doctor Name">
+                </div>
+                <label for="drName" class="feildLabel">Clinic/Hospital Name</label>
+                <div class="inputFeild">
+                    <i class="fa fa-user feildIcon" aria-hidden="true"></i>
+                    <input class="formFeild" type="drName" placeholder="Enter Clinic/Hospital Name">
+                </div>
+                <label for="drName" class="feildLabel">Clinic/Hospital Address</label>
+                <div class="inputFeild">
+                    <i class="fa fa-user feildIcon" aria-hidden="true"></i>
+                    <input class="formFeild" type="drName" placeholder="Enter Clinic/Hospital Address">
+                </div>
+                <label for="drName" class="feildLabel">City</label>
+                <div class="inputFeild">
+                    <i class="fa fa-user feildIcon" aria-hidden="true"></i>
+                    <input class="formFeild" type="drName" placeholder="Enter City">
+                </div>
+                <label for="myfile" class="chooseFileLabel">
+                    <img id='output' class="chooseFiles" src="Images/gimg2.png" alt="">
+                    <input type="file" placeholder="Choose Image" class="filesInput" accept='image/*' onchange='openFile(event)'>
+                </label>
+                <div class="doctorNext">
+                    <button class="submitButton allButtons" id="customerFormNext">Next</button>
+                </div>
+                <!-- <div class="formSpace">&nbsp</div> -->
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="canvasFrame" class="appsection sections">
+        <div class="container videoMargin">
+            <div class="frameDiv">
+                <img class="frameImage" src="Images/01.png" alt="">
+            </div>
+            <div class="doctorNext">
+                    <button class="submitButton allButtons" id="canvasFrameNext">Next Frame</button>
+                </div>
+                <div class="drProfileName" draggable="true">
+                    <img class="draggableImg" src="Images/drImg.png" alt="" draggable="true">
+                    <p>grih</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="fourthSection" class="appsection sections">
+            <div class="container videoMargin">
+                <div class="frameDiv">
+                <img class="frameImage" src="Images/01.png" alt="">
+            </div>
+            <div class="doctorNext">
+                <button class="submitButton" id="fourthSectionNext">Next Frame</button>
+            </div>
+        </div>
+    </section> -->
+    <section id="canvasPreview" class="appsection sections">
+        <div class="container videoMargin">
+            <div class="frameDiv">
+                <img class="frameImage" src="Images/03.jfif" alt="">
+            </div>
+            <div class="doctorNext">
+                <button class="submitButton allButtons" id="generateVideo">Generate Video</button>
+            </div>
+        </div>
+    </section>
+    <section id="videoPreview" class="appsection sections">
+        <divdiv class="container videoMargin">
+            <div class="frameDiv videoFrameDiv">
+                <video class="frameImage" controls autoplay>
+                    <source src="Images/04 video.mp4" type="" >
+                </video>
+            </div>
+            <div class="doctorNext">
+                <button class="submitButton downloadButton allButtons">Download Video</button>
+            </div>
+        </div>
+    </section>
+    <section id="microLabsSection" class="microLabsSection appsection sections">
+    <div class="container">
+    <div class="logoDiv">
+        <img class="logoImg" src="Images/zlogo.png" alt="">
+    </div>
+    <div class="microLabsForm">
+        <form action="">
+            <h4 class="microLabHeading">Register/fill details</h4>
+            <div class="microLabFeildDiv">
+                <i class="fa fa-id-card-o microLabFormIcon" aria-hidden="true"></i>
+                <select name="state" id="formStateInput" class="microLabFormFeild">
+                    <option value="selectState">Select State</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="AndraPradesh">Andra Pradesh</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerela">Kerela</option>
+                    <option value="TamilNadu">Tamil Nadu</option>
+                    <option value="ChennaiRegion">Chennai Region</option>
+                    <option value="NorthEast">North East</option>
+                    <option value="WestBengal">West Bengal</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Jarkhand">Jarkhand</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Chattisgarh">Chattisgarh</option>
+                    <option value="MadhyaPradesh">MadhyaPradesh</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="JammuKashmir">Jammu & Kashmir</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Chandigarh">Chandigarh - Vivek Dhoby</option>
+                    <option value="HaryanaVivekDhoby">Haryana - VivekDhoby</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="UttarPradeshW">Uttar Pradesh W</option>
+                    <option value="UttarPradeshE">Uttar Pradesh E</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select>
+            </div>
+            <div class="microLabFeildDiv">
+                <i class="fa fa-address-card-o microLabFormIcon" aria-hidden="true"></i>
+                <select name="RM" id="selectRM" class="microLabFormFeild">
+                    <option value="SelectRM">Select RM</option>
+                </select>
+            </div>
+            <div class="microLabFeildDiv">
+                <i class="fa fa-address-card microLabFormIcon" aria-hidden="true"></i>
+                <select name="TE" id="selectTM" class="microLabFormFeild">
+                    <option value="SelectTM">Select TM</option>
+                </select>
+            </div>
+            <div class="microLabFeildDiv">
+                <i class="fa fa-id-badge microLabFormIcon" aria-hidden="true"></i>
+                <select name="HQ" id="select" class="microLabFormFeild">
+                    <option value="SelectHQ">Select HQ</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="microLabFormBtnDiv">
+        <button class="microLabNext allButtons" id="microLabFormNext">Next</button>
+    </div>
+    </div>
+    </section>
+    <script src="web app.js"></script>
+    <script src="Web app micro Labs.js"></script>
+</body>
+</html>

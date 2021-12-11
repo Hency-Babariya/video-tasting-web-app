@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("Images/body background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container{
+    max-width: 87%;
+    margin: auto;
+}
+
+.logoDiv{
+    text-align: center;
+}
+
+.logoImg{
+    max-width: 273px;
+    width: 100%;
+    /* margin: auto; */
+    margin: 10px auto 10px;
+    box-shadow: 5px 5px 10px 1px #bcddf161;
+}
+
+.buttonsMainDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.pageButtons{
+    width: 130px;
+    height: 130px;
+    background: #232425;
+    border-radius: 7px;
+    margin: 12px 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonImages{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.drImage{
+    filter: invert(1);
+}
+
+.buttonTexts{
+    color: white;
+    display: block;
+    font-family: "Dax", sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+}
+    
+.drButton{
+    box-shadow: 5px 5px 10px #141619 inset, -3px 1px 10px inset;
+}
+
+.mrButton{
+    box-shadow: 5px 5px 13px 0px #00000069;
+}
+
+.logosMainDiv{
+    margin-top: 30px;
+}
+
+.logosDiv{
+    text-align: center;
+}
+
+.logosImgs{
+    width: 25%;
+    margin: 20px 18px;
+    box-shadow: 0 0 12px 1px #00000021;
+}
+
+.careForText{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #232323;
+    margin: 5px;
+    font-weight: 900;
+    font-size: 37px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.doctorMainDiv{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formHeading{
+    margin-top: 32px;
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+}
+
+::placeholder{
+    color: #CCCCCC;
+    opacity: 1; /* Firefox */;
+}
+
+label{
+    margin-bottom: 25px;
+}
+
+.feildLabel{
+    font-family: 'Oswald';
+    color: black;
+    font-weight: 900;
+    letter-spacing: 0.8px;  
+}
+
+.inputFeild{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.filesInput{
+    width: 100%;
+    margin-left: 26px;
+    margin-top: 10px;
+}
+
+.selectFeild{
+    width: 100%;
+    padding: 11px 4px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    box-shadow: 5px 5px 6px #14161917, -3px 1px 6px #3c3f421a;
+    border: transparent;
+    color: #ffffff;
+    background-color: #232323;
+}
+
+.feildIcon{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: rgb(118 115 115);
+}
+
+.formFeild{
+    width: 100%;
+    padding: 11px 30px;
+    font-size: 16px;
+    font-family: 'Oswald';
+    font-weight: 700;
+    border-radius: 4px;
+    box-shadow: 5px 5px 6px #14161917, -3px 1px 6px #3c3f421a;
+    border: transparent;
+    color: #CCCCCC;
+    letter-spacing: 0.5px;
+  }
+
+  .chooseFiles{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  label.chooseFileLabel {
+    background: #A8A8A8;
+    display: block;
+    width: 155px;
+    height: 137px;
+    padding: 18px 0;
+    margin: auto;
+}
+
+.doctorNext{
+    text-align: center;
+    margin: 25px 0;
+}
+
+.submitButton{
+    border: transparent;
+    font-size: 18px;
+    font-family: 'Oswald';
+    font-weight: 900;
+    color: white;
+    background: #232323;
+    letter-spacing: 1px;
+    padding: 10px 65px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #14161952, -3px 1px 10px #44464836;
+    cursor: pointer;
+}
+
+.formSpace{
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.frameDiv{
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.frameImage{
+    width: 100%;
+}
+
+.drProfileName{
+    max-width: 10%;
+}
+
+.draggableImg{
+    width: 100%;
+}
+
+.downloadButton{
+    border-radius: 5px;
+    padding: 12px 25px;
+}
+
+.microLabHeading{
+    font-family: 'Oswald';
+    letter-spacing: 0.5px;
+    font-size: 21px;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+.microLabsForm{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.microLabFeildDiv{
+    position: relative;
+}
+
+.microLabFormFeild{
+    width: 100%;
+    font-size: 17px;
+    padding: 12px 43px;
+    border: transparent;
+    box-shadow: 5px 5px 6px #14161917, -3px 1px 6px #3c3f421a;
+    margin-bottom: 13px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+}
+
+.microLabFormIcon{
+    color: rgb(118 115 115);
+    position: absolute;
+    top: 17px;
+    left: 15px;
+}
+
+.microLabFormBtnDiv{
+    text-align: center;
+    margin: 25px 0;
+}
+
+.microLabNext{
+    border: transparent;
+    font-size: 18px;
+    font-family: 'Oswald';
+    font-weight: 900;
+    color: white;
+    background: #232323;
+    letter-spacing: 1px;
+    padding: 10px 65px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #14161952, -3px 1px 10px #44464836;
+}
+.HomePage{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+
+.appsection{
+    display: none;
+}
+.customerForm{
+    display: none;
+}
+.microLabsSection{
+    display: none;
+
+}
+
+.videoMargin{
+    margin-top: 40px;
+}
+
+.videoFrameDiv{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 985px) {
+    .logosImgs {
+        width: 40%;
+        margin: 8px 13px;
+    }
+    .frameDiv{
+        max-width: 100%;
+    }
+
+    .videoFrameDiv{
+        max-width: 90%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .downloadButton{
+        border-radius: 5px;
+        padding: 10px 22px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logosImgs{
+        /* width: 52%; */
+        margin: 4px 10px;
+    }
+    .HomePage{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logosImgs{
+        width: 42%;
+        margin: 4px 10px;
+    }
+
+    .careForText{
+        margin-top: 30px;
+    }
+}
+.filesInput::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .filesInput::before {
+    content: 'Choose Image';
+    display: inline-block;
+    background: white;
+    border: 2px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    /* outline: none; */
+    /* white-space: nowrap; */
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 10pt;
+    color: #232323;
+    font-family: roboto;
+  }
+  .filesInput:hover::before {
+    border-color: black;
+  }
+  .filesInput:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
