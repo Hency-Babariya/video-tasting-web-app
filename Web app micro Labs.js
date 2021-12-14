@@ -1,4 +1,3 @@
-// Video Testing Web App
 // Show Hide Sections On Button Click
 let ides;
 let first = document.getElementById("doctorCategory");
